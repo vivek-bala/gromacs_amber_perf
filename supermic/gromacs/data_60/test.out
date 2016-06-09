@@ -1,0 +1,62 @@
+--------------------------------------
+Running PBS prologue script
+--------------------------------------
+User and Job Data:
+--------------------------------------
+Job ID:    128959.smic3
+Username:  vivek91
+Group:     xsede
+Date:      09-Jun-2016 16:58
+Node:      smic025 (68961)
+--------------------------------------
+PBS has allocated the following nodes:
+
+smic025
+smic040
+smic348
+
+A total of 60 processors on 3 nodes allocated
+---------------------------------------------
+Check nodes and clean them of stray processes
+---------------------------------------------
+Checking node smic025 16:58:32 
+Checking node smic040 16:58:34 
+Checking node smic348 16:58:36 
+Done clearing all the allocated nodes
+------------------------------------------------------
+Concluding PBS prologue script - 09-Jun-2016 16:58:36
+------------------------------------------------------
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 355 K
+Calculated rlist for 1x1 atom pair-list as 1.114 nm, buffer size 0.114 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.041 nm, buffer size 0.041 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 52x52x52, spacing 0.096 0.096 0.096
+This run will generate roughly 1 Mb of data
+------------------------------------------------------
+Running PBS epilogue script    - 09-Jun-2016 16:58:59
+------------------------------------------------------
+Checking node smic025 (MS)
+Checking node smic348 ok
+Checking node smic040 ok
+Checking node smic025 ok
+------------------------------------------------------
+Concluding PBS epilogue script - 09-Jun-2016 16:59:06
+------------------------------------------------------
+Exit Status:     0
+Job ID:          128959.smic3
+Username:        vivek91
+Group:           xsede
+Job Name:        sym_test
+Session Id:      68960
+Resource Limits: ncpus=1,neednodes=3:ppn=20,nodes=3:ppn=20,walltime=00:10:00
+Resources Used:  cput=00:20:05,mem=1831352kb,vmem=9115780kb,walltime=00:00:22
+Queue Used:      workq
+Account String:  TG-MCB090174
+Node:            smic025
+Process id:      69620
+------------------------------------------------------

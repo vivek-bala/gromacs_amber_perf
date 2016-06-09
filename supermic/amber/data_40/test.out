@@ -1,0 +1,48 @@
+--------------------------------------
+Running PBS prologue script
+--------------------------------------
+User and Job Data:
+--------------------------------------
+Job ID:    128977.smic3
+Username:  vivek91
+Group:     xsede
+Date:      09-Jun-2016 17:16
+Node:      smic025 (75279)
+--------------------------------------
+PBS has allocated the following nodes:
+
+smic025
+smic040
+
+A total of 40 processors on 2 nodes allocated
+---------------------------------------------
+Check nodes and clean them of stray processes
+---------------------------------------------
+Checking node smic025 17:16:51 
+Checking node smic040 17:16:53 
+Done clearing all the allocated nodes
+------------------------------------------------------
+Concluding PBS prologue script - 09-Jun-2016 17:16:53
+------------------------------------------------------
+------------------------------------------------------
+Running PBS epilogue script    - 09-Jun-2016 17:19:52
+------------------------------------------------------
+Checking node smic025 (MS)
+Checking node smic040 ok
+Checking node smic025 ok
+------------------------------------------------------
+Concluding PBS epilogue script - 09-Jun-2016 17:19:58
+------------------------------------------------------
+Exit Status:     0
+Job ID:          128977.smic3
+Username:        vivek91
+Group:           xsede
+Job Name:        sym_test
+Session Id:      75278
+Resource Limits: ncpus=1,neednodes=2:ppn=20,nodes=2:ppn=20,walltime=00:10:00
+Resources Used:  cput=00:58:57,mem=10252kb,vmem=334420kb,walltime=00:03:03
+Queue Used:      workq
+Account String:  TG-MCB090174
+Node:            smic025
+Process id:      75888
+------------------------------------------------------
