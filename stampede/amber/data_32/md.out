@@ -1,0 +1,230 @@
+
+          -------------------------------------------------------
+          Amber 12 SANDER                              2012
+          -------------------------------------------------------
+
+| PMEMD implementation of SANDER, Release 12
+
+| Run on 06/09/2016 at 18:31:51
+
+  [-O]verwriting output
+
+File Assignments:
+|   MDIN: mdin.CPU                                                              
+|  MDOUT: md.out                                                                
+| INPCRD: inpcrd                                                                
+|   PARM: prmtop                                                                
+| RESTRT: restrt                                                                
+|   REFC: refc                                                                  
+|  MDVEL: mdvel                                                                 
+|   MDEN: mden                                                                  
+|  MDCRD: mdcrd                                                                 
+| MDINFO: mdinfo                                                                
+|LOGFILE: logfile                                                               
+
+ 
+ Here is the input file:
+ 
+Nucleosome GB 0.8ps.                                                           
+ &cntrl                                                                        
+  imin=0,irest=1,ntx=5,                                                        
+  nstlim=400,dt=0.002,                                                         
+  ntf=2,ntc=2,ntb=0,                                                           
+  igb=5,cut=9999.0,rgbmax=15.0,                                                
+  ntpr=200,ntwx=200,ntwr=1000,                                                 
+  saltcon=0.1,                                                                 
+  temp0=310.0,                                                                 
+  ntt=1,tautp=1.0,                                                             
+  nscm=0,                                                                      
+ /                                                                             
+                                                                               
+
+
+ 
+| Conditional Compilation Defines Used:
+| DIRFRC_COMTRANS
+| DIRFRC_EFS
+| DIRFRC_NOVEC
+| MPI
+| PUBFFT
+| FFTLOADBAL_2PROC
+| BINTRAJ
+| MKL
+ 
+| New format PARM file being parsed.
+| Version =    1.000 Date = 03/29/09 Time = 17:59:12
+
+| Note: 1-4 EEL scale factors were NOT found in the topology file.
+|       Using default value of 1.2.
+
+| Note: 1-4 VDW scale factors were NOT found in the topology file.
+|       Using default value of 2.0.
+| Duplicated    0 dihedrals
+
+| Duplicated    0 dihedrals
+
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+ NATOM  =   25095 NTYPES =      17 NBONH =   11482 MBONA  =   14436
+ NTHETH =   26397 MTHETA =   20689 NPHIH =   49200 MPHIA  =   44226
+ NHPARM =       0 NPARM  =       0 NNB   =  138902 NRES   =    1268
+ NBONA  =   14436 NTHETA =   20689 NPHIA =   44226 NUMBND =      63
+ NUMANG =     143 NPTRA  =      66 NATYP =      34 NPHB   =       0
+ IFBOX  =       0 NMXRS  =      33 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+                                                                                
+
+General flags:
+     imin    =       0, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       5, irest   =       1, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       1, ntpr    =     200, ntrx    =       1, ntwr    =    1000
+     iwrap   =       0, ntwx    =     200, ntwv    =       0, ntwe    =       0
+     ioutfm  =       0, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       2, ntb     =       0, igb     =       5, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     dielc   =   1.00000, cut     =9999.00000, intdiel =   1.00000
+     saltcon =   0.10000, offset  =   0.09000, gbalpha=    1.00000
+     gbbeta  =   0.80000, gbgamma =   4.85000, surften =   0.00500
+     rdt     =   0.00000, rgbmax  =  15.00000  extdiel =  78.50000
+     alpb  =        0
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Molecular dynamics:
+     nstlim  =       400, nscm    =         0, nrespa  =         1
+     t       =   0.00000, dt      =   0.00200, vlimit  =  20.00000
+
+Berendsen (weak-coupling) temperature regulation:
+     temp0   = 310.00000, tempi   =   0.00000, tautp   =   1.00000
+
+SHAKE:
+     ntc     =       2, jfastw  =       0
+     tol     =   0.00001
+
+| Intermolecular bonds treatment:
+|     no_intermolecular_bonds =       1
+
+| Energy averages sample interval:
+|     ene_avg_sampling =     200
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+                                                                                
+ begin time read from input coords =   100.000 ps
+
+ 
+ Number of triangulated 3-point waters found:        0
+| Dynamic Memory, Types Used:
+| Reals             1055491
+| Integers          1945821
+
+| Running AMBER/MPI version on   32 nodes
+
+ 
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+
+ NSTEP =      200   TIME(PS) =     100.400  TEMP(K) =   307.78  PRESS =     0.0
+ Etot   =    -66392.2630  EKtot   =     19511.2510  EPtot      =    -85903.5140
+ BOND   =      5772.4737  ANGLE   =     13631.9753  DIHED      =     17266.0926
+ 1-4 NB =      5561.8434  1-4 EEL =      1230.6647  VDWAALS    =    -13679.4017
+ EELEC  =     -2859.4280  EGB     =   -112827.7339  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+
+
+ NSTEP =      400   TIME(PS) =     100.800  TEMP(K) =   310.08  PRESS =     0.0
+ Etot   =    -66356.7347  EKtot   =     19657.2011  EPtot      =    -86013.9358
+ BOND   =      5795.6661  ANGLE   =     13593.4380  DIHED      =     17156.6942
+ 1-4 NB =      5586.7609  1-4 EEL =      1425.7972  VDWAALS    =    -13506.0371
+ EELEC  =     -3463.9323  EGB     =   -112602.3230  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+
+
+      A V E R A G E S   O V E R       2 S T E P S
+
+
+ NSTEP =      400   TIME(PS) =     100.800  TEMP(K) =   308.93  PRESS =     0.0
+ Etot   =    -66374.4988  EKtot   =     19584.2261  EPtot      =    -85958.7249
+ BOND   =      5784.0699  ANGLE   =     13612.7066  DIHED      =     17211.3934
+ 1-4 NB =      5574.3022  1-4 EEL =      1328.2309  VDWAALS    =    -13592.7194
+ EELEC  =     -3161.6801  EGB     =   -112715.0285  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+
+
+      R M S  F L U C T U A T I O N S
+
+
+ NSTEP =      400   TIME(PS) =     100.800  TEMP(K) =     1.15  PRESS =     0.0
+ Etot   =        17.7641  EKtot   =        72.9751  EPtot      =        55.2109
+ BOND   =        11.5962  ANGLE   =        19.2687  DIHED      =        54.6992
+ 1-4 NB =        12.4588  1-4 EEL =        97.5663  VDWAALS    =        86.6823
+ EELEC  =       302.2522  EGB     =       112.7055  RESTRAINT  =         0.0000
+ ------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+   5.  TIMINGS
+--------------------------------------------------------------------------------
+
+|  NonSetup CPU Time in Major Routines, Average for All Tasks:
+|
+|     Routine           Sec        %
+|     ------------------------------
+|     DataDistrib       0.28    0.12
+|     Nonbond         231.87   99.36
+|     Bond              0.00    0.00
+|     Angle             0.05    0.02
+|     Dihedral          0.18    0.08
+|     Shake             0.01    0.01
+|     RunMD             0.97    0.41
+|     Other             0.00    0.00
+|     ------------------------------
+|     Total           233.36
+
+|  Generalized Born CPU Time, Average for All Tasks:
+|
+|     Routine                 Sec        %
+|     ------------------------------------
+|     Radii Calc             13.90    5.96
+|     Diagonal Calc          25.79   11.05
+|     Off Diagonal Calc     185.03   79.29
+|     GBSA LCPO Calc          0.00    0.00
+|     Radii Distrib           7.12    3.05
+|     ---------------------------------
+|     Total                 231.85   99.35
+
+|  Final Performance Info:
+|     -----------------------------------------------------
+|     Average timings for last       0 steps:
+|         Elapsed(s) =       0.00 Per Step(ms) =   Infinity
+|             ns/day =       0.00   seconds/ns =   Infinity
+|
+|     Average timings for all steps:
+|         Elapsed(s) =     234.35 Per Step(ms) =     585.88
+|             ns/day =       0.29   seconds/ns =  292937.98
+|     -----------------------------------------------------
+
+|  Master Setup CPU time:            0.80 seconds
+|  Master NonSetup CPU time:       233.65 seconds
+|  Master Total CPU time:          234.45 seconds     0.07 hours
+
+|  Master Setup wall time:           3    seconds
+|  Master NonSetup wall time:      234    seconds
+|  Master Total wall time:         237    seconds     0.07 hours
